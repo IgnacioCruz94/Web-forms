@@ -7,15 +7,15 @@
   </head>  
   <body>
     <h1><b>Hello!</b></h1>
-    <h2>Dear candidate, Welcome to your School Application.</h2>
+    <h2>Dear candidate, Welcome to your College Application.</h2>
     <p>Browse your application to see how easy it is or start filling it out right now.</p>
     <form action="/signup" method="POST">
-      <label for="fullname">Full name:</label><br>
-      <input type"text" name="fullname" id="fullname"><br>
-      <label for="emailaddress">Email address:</label><br>
-      <input type"email" name="emailaddress" id="email_address"><br>
-      <label for="age">How old are you?:</label><br>
-      <input type"number" min="18" name="age" id="age"><br>
+      <label for="full_name">Full name:</label><br>
+      <input type"text" name="fullname" id="full_name"><br><br>
+      <label for="email_address">Email address:</label><br>
+      <input type"email" name="emailaddress" id="email_address"><br><br>
+      <label for="age_candidate">How old are you?:</label><br>
+      <input type"number" min="18" name="age" id="age_candidate"><br><br>
       <label for="state">State:</label><br>
       <select name="state" id="survey_State">
         <option value="Veracruz">Veracruz</option>
@@ -26,6 +26,15 @@
         <option value="Jalisco">Jalisco</option>
         <option value="Nuevo Leon">Nuevo León</option>
       </select>
+      <p>Select Academic Program you are applying:</p>
+      <input type="radio" id="choice1" name="program" value="Engineering">
+      <label for="choice1">Engineering</label>
+      <input type="radio" id="choice2" name="program" value="Business&Management">
+      <label for="choice1">Business & Management</label>
+      <input type="radio" id="choice3" name="program" value="Computers&Technology">
+      <label for="choice1">Computers & Technology</label>
+      <input type="radio" id="choice4" name="program" value="Education&Teaching">
+      <label for="choice1">Education & Teaching</label>
     </form>
   </body>
 </html>
